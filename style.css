@@ -7,19 +7,20 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  body{
+  body {
       background-color: #ffb4797a;
 
   }
-  .pageWrapper{
+  .pageWrapper {
     padding: 20px 0;
-    margin: 20;
+    margin: 20px;
   }
 
   .title {
     font-size: 70px;
     text-align: center;
     margin-top: 10px;
+    color: #87b487;
   }
   
   .gameWrapper {
@@ -29,11 +30,12 @@
     margin: 20px auto;
     padding: 0 10px; 
     box-sizing: border-box;
+    display: none;
   }
   
   .scores {
     font-size: 40px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   
   
@@ -57,22 +59,42 @@
         font-family: 'Varela Round', sans-serif;
         min-width: 56px;
         min-height: 56px;
-        transition: 0.3s ease;
+        transition: background-color 0.3s ease;
         cursor: pointer;
+        margin: 4px;
     }
     .square:hover {
-        background-color: rgb(196, 196, 249);
+        background-color: #c4c4f9;
     }
 
     .reset {
-      margin-top: 20px;
+      margin-top: 10px;
       border-radius: 10px;
-      border: 1px solid #a788e4b5;
+      border: 1px solid #a4bde9b5;
       font-size: 18px;
       cursor: pointer;
-      background-color: rgb(199, 239, 252);
-      transition: 0.3 ease;
+      background-color: #c4e6f1;
+      transition: background-color 0.3s ease;
     }
     .reset:hover {
-        background-color: rgb(174, 232, 251);
+        background-color: #9ae2fa;
+    }
+    .selection{
+        text-align: center;
+        color: #ac8aa9;
+
+    }
+    .token{
+        display: inline-block;
+        font-size: 40px;
+        margin: 0 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 60px;
+        max-width: 60px;
+        transition: background-color 0.3s ease;
+    }
+    .token:hover {
+        background-color: #d496667a;
     }
