@@ -18,7 +18,7 @@ let roundCounter = 1;
 let playerOneChoices = [];
 let playerTwoChoices = [];
 
-function handleSelection(evt) {
+function handleTokenSelection(evt) {
     if (evt.target === xBtn) {
         playerOneToken = 'X';
         playerTwoToken = 'O'
@@ -78,6 +78,7 @@ function checkResult() {
             playerOneScore++;
             disableClicks();
             updateScores();
+            handleWinningSquares([a, b, c]);
             break
         }
         
@@ -86,6 +87,7 @@ function checkResult() {
             playerTwoScore++;
             disableClicks();
             updateScores();
+            handleWinningSquares([a, b, c]);
             break
         }
         
@@ -118,9 +120,16 @@ function handleReset() {
         for (let square of gameSquares) {
             square.addEventListener('click', moveDecider);
             square.innerText = ''
+            square.classList.remove('winning-square')
         }
     } else {
         titleMessage.innerText = 'No sore Losers'
+    }
+}
+
+function handleWinningSquares (combination) {
+    for (let index of combination) {
+        gameSquares[index].classList.add('winning-square');
     }
 }
 
@@ -128,5 +137,5 @@ for (let square of gameSquares) {
     square.addEventListener('click', moveDecider);
 }
 resetBtn.addEventListener('click', handleReset);
-xBtn.addEventListener('click', handleSelection)
-oBtn.addEventListener('click', handleSelection)
+xBtn.addEventListener('click', handleTokenSelection)
+oBtn.addEventListener('click', handleTokenSelection)

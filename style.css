@@ -71,7 +71,7 @@ body {
 	text-align: center;
 	color: #ac8aa9;
 }
-.token{
+.token {
 	display: inline-block;
 	font-size: 40px;
 	margin: 0 10px;
@@ -84,4 +84,8 @@ body {
 }
 .token:hover {
 	background-color: #d496667a;
+}
+
+.winning-square {
+    background-color: #c8c8f8;
 }
