@@ -57,6 +57,7 @@ function handleMoveP1(evt) {
     playerOneMove.innerText = playerOneToken;
     playerOneChoices.push(Number(playerOneMove.dataset.index));
 }
+
 function handleMoveP2(evt) {
     let playerTwoMove = evt.target
     playerTwoMove.innerText = playerTwoToken

@@ -18,6 +18,13 @@ This is a simple web-based two-player Noughts & Crosses game. It allows players 
 4. The game will declare a winner or a draw when the game ends.
 5. Players can reset the board for a new round.
 
+### Current Deploy
+
+![Updated](/imgs/Screenshot%202023-11-27%20at%205.39.17 pm.png)
+![Updated](/imgs/Screenshot%202023-11-27%20at%205.39.36 pm.png)
+
+### First Deploy
+
 ![3x3 version](/imgs/Screenshot%202023-09-07%20at%201.16.07%20pm.png)
 ![3x3](/imgs/Screenshot%202023-09-07%20at%201.17.03%20pm.png)
 
@@ -31,5 +38,3 @@ This is a simple web-based two-player Noughts & Crosses game. It allows players 
 6. Players can change board size for the new round.
 
 ![4x4 Version](/imgs/Screenshot%202023-09-07%20at%201.16.42%20pm.png)
-
-
